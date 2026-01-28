@@ -1,0 +1,33 @@
+# ===== Visual Studio =====
+.vs/
+*.user
+*.suo
+*.log
+*.tlog
+*.ilk
+*.pdb
+*.idb
+*.ipch
+
+# ===== Build folders =====
+Debug/
+Release/
+x64/
+x86/
+bin/
+obj/
+
+# ===== CMake (اگر داشتی) =====
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# ===== Ignore everything =====
+*
+
+# ===== Except these =====
+!*.cpp
+!*.h
+!README.md
+!guide.txt
+!.gitignore
