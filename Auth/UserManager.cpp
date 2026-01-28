@@ -1,0 +1,61 @@
+﻿#include "UserManager.h"
+
+UserManager::UserManager()
+{
+	currentUser = nullptr;
+}
+
+bool UserManager::signup(const string& username, const string& password) {
+
+    if (users.find(username) != users.end()) {
+        return false;
+    }
+
+
+    User* newUser = new User(username, password);
+    users[username] = newUser;
+
+    return true;
+}
+
+bool UserManager::login(const string& username, const string& password) {
+    // اگر کاربر وجود ندارد
+    if (users.find(username) == users.end()) {
+        return false;
+    }
+
+    User* user = users[username];
+
+    // بررسی رمز عبور
+    if (!user->checkPassword(password)) {
+        return false;
+    }
+
+    currentUser = user;
+    return true;
+}
+
+void UserManager::logout() {
+    currentUser = nullptr;
+}
+
+User* UserManager::getCurrentUser() const {
+    return currentUser;
+}
+
+User* UserManager::getUser(const string& username) const {
+    auto it = users.find(username);
+    if (it != users.end())
+        return it->second;
+
+    return nullptr;
+}
+
+UserManager::~UserManager() {
+    for (auto& pair : users) {
+        delete pair.second;
+    }
+}
+
+
+

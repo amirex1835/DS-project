@@ -1,0 +1,28 @@
+DS-project/
+│
+├── Core/
+│   ├── User.h / User.cpp
+│   ├── Post.h / Post.cpp
+│
+├── Auth/
+│   ├── UserManager.h / UserManager.cpp
+│
+├── Search/
+│   ├── Trie.h / Trie.cpp
+│   ├── InvertedIndex.h / InvertedIndex.cpp
+│   ├── Hamming.h / Hamming.cpp
+│
+├── Graph/
+│   ├── SocialGraph.h / SocialGraph.cpp
+│
+├── Feed/
+│   ├── FeedManager.h / FeedManager.cpp
+│   ├── MaxHeap.h / MaxHeap.cpp
+│
+├── History/
+│   ├── SearchHistory.h / SearchHistory.cpp
+│
+├── CLI/
+│   ├── CommandParser.h / CommandParser.cpp
+│
+└── main.cpp
