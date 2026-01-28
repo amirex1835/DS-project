@@ -56,6 +56,35 @@ UserManager::~UserManager() {
         delete pair.second;
     }
 }
+bool UserManager::follow(const string& username) {
+    if (!currentUser) return false;
+
+    User* target = getUser(username);
+    if (!target) return false;
+
+    // آپدیت User
+    currentUser->follow(username);
+    target->addFollower(currentUser->getUsername());
+
+    // آپدیت Graph
+    graph.follow(currentUser->getUsername(), username);
+
+    return true;
+}
+
+bool UserManager::unfollow(const string& username) {
+    if (!currentUser) return false;
+
+    User* target = getUser(username);
+    if (!target) return false;
+
+    currentUser->unfollow(username);
+    target->removeFollower(currentUser->getUsername());
+
+    graph.unfollow(currentUser->getUsername(), username);
+
+    return true;
+}
 
 
 

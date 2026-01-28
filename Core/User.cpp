@@ -35,3 +35,10 @@ void User::addPost(int postId)
 {
 	posts.push_back(postId);
 }
+void User::addFollower(const string& username) {
+	followers.insert(username);
+}
+
+void User::removeFollower(const string& username) {
+	followers.erase(username);
+}

@@ -29,7 +29,8 @@ public:
 
     int getFollowersCount() const;
 
-
+    void addFollower(const string& username);
+    void removeFollower(const string& username);
     void addPost(int postId);
 };
 

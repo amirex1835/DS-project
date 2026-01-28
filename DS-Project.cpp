@@ -1,10 +1,70 @@
 ﻿#include <iostream>
 #include <sstream>
 #include "Auth/UserManager.h"
-
+#include "search/Trie.h"
 using namespace std;
 
 int main() {
+    UserManager userManager;
+
+    cout << "=== SIGNUP TEST ===" << endl;
+    userManager.signup("amir", "123");
+    userManager.signup("ali", "456");
+    userManager.signup("reza", "789");
+
+    cout << "Users created successfully.\n" << endl;
+
+    cout << "=== LOGIN TEST ===" << endl;
+    if (userManager.login("amir", "123")) {
+        cout << "amir logged in.\n" << endl;
+    }
+    else {
+        cout << "login failed.\n";
+        return 0;
+    }
+
+    cout << "=== FOLLOW TEST ===" << endl;
+    userManager.follow("ali");
+    userManager.follow("reza");
+
+    cout << "amir followed ali and reza.\n" << endl;
+
+    cout << "Followers count:" << endl;
+    cout << "ali followers: "
+        << userManager.getUser("ali")->getFollowersCount() << endl;
+
+    cout << "reza followers: "
+        << userManager.getUser("reza")->getFollowersCount() << endl;
+
+    cout << "\n=== UNFOLLOW TEST ===" << endl;
+    userManager.unfollow("ali");
+
+    cout << "amir unfollowed ali.\n" << endl;
+
+    cout << "ali followers: "
+        << userManager.getUser("ali")->getFollowersCount() << endl;
+
+    userManager.logout();
+    cout << "\nUser logged out." << endl;
+
+    cout << "\n=== TEST FINISHED SUCCESSFULLY ===" << endl;
+    return 0;
+    /*return 0;
+    Trie trie;
+
+    trie.insert("amir");
+    trie.insert("amin");
+    trie.insert("ali");
+    trie.insert("reza");
+
+    std::string prefix = "a";
+    auto users = trie.prefixSearch(prefix);
+
+    for (auto& u : users)
+        std::cout << u << std::endl;
+
+    return 0;
+    return 0;
     UserManager userManager;
 
     string line;
@@ -77,5 +137,5 @@ int main() {
         }
     }
 
-    return 0;
+    return 0;*/
 }

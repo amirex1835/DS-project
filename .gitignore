@@ -13,6 +13,7 @@
 Debug/
 Release/
 x64/
+x64/Debug
 x86/
 bin/
 obj/

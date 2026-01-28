@@ -5,14 +5,14 @@
 #include <unordered_map>
 #include <string>
 #include "../Core/User.h"
-
+#include "../Core/UserGraph.h"
 using namespace std;
 
 class UserManager {
 private:
     unordered_map<string, User*> users;
     User* currentUser;
-
+    UserGraph graph;
 public:
     UserManager();
 
@@ -20,8 +20,10 @@ public:
 
     bool login(const string& username, const string& password);
 
-
     void logout();
+
+    bool follow(const string& username);
+    bool unfollow(const string& username);
 
     // دسترسی
     User* getCurrentUser() const;
