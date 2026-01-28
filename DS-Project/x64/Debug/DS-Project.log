@@ -1,6 +1,0 @@
-﻿  UserManager.cpp
-  User.cpp
-C:\Users\AMIR\Desktop\DS-Project\Core\User.cpp(31,23): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  DS-Project.cpp
-  Generating Code...
-  DS-Project.vcxproj -> C:\Users\AMIR\Desktop\DS-Project\x64\Debug\DS-Project.exe
