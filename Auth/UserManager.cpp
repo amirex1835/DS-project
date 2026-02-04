@@ -52,25 +52,45 @@ User* UserManager::getUser(const string& username) const {
     return nullptr;
 }
 
-bool UserManager::createPost(const string& content)
-{
+bool UserManager::createPost(const string& content) {
+
     if (currentUser == nullptr)
         return false;
+    int postId = nextPostId;
+    nextPostId++;
 
-    int id = nextPostId++;
-    Post* post = new Post(id, currentUser->getUsername(), content);
+    Post* newPost = new Post(
+        postId,                        
+        currentUser->getUsername(),     
+        content                         
+    );
+    posts[postId] = newPost;
 
-    posts[id] = post;
-    currentUser->addPost(id);
+    currentUser->addPost(postId);
+
+    invertedIndex.addPost(postId, content);
 
     return true;
 }
+
 
 Post* UserManager::getPost(int postId) {
     if (posts.find(postId) == posts.end())
         return nullptr;
     return posts[postId];
 }
+
+vector<Post*> UserManager::searchPosts(const string& word) {
+    vector<Post*> result;
+    auto ids = invertedIndex.search(word);
+
+    for (int id : ids) {
+        if (posts.count(id))
+            result.push_back(posts[id]);
+    }
+    return result;
+}
+
 
 UserManager::~UserManager() {
     for (auto& pair : users)

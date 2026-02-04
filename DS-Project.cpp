@@ -5,7 +5,21 @@
 using namespace std;
 
 int main() {
-    UserManager userManager;
+    UserManager um;
+
+    um.signup("ali", "123");
+    um.login("ali", "123");
+
+    um.createPost("I love data structures");
+    um.createPost("Trie and inverted index are awesome");
+
+    auto results = um.searchPosts("data");
+
+    for (auto p : results) {
+        cout << p->getAuthor() << " : " << p->getContent() << endl;
+    }
+
+    /*UserManager userManager;
 
     cout << "=== SIGNUP TEST ===" << endl;
     userManager.signup("amir", "123");
@@ -23,7 +37,7 @@ int main() {
     for (int id : u->getPosts()) {
         Post* p = userManager.getPost(id);
         cout << p->getAuthor() << ": " << p->getContent() << endl;
-    }
+    }*/
 
     /*cout << "=== LOGIN TEST ===" << endl;
     if (userManager.login("amir", "123")) {

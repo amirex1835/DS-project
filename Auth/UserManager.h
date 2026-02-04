@@ -7,6 +7,8 @@
 #include "../Core/User.h"
 #include "../Core/UserGraph.h"
 #include "../Core/Post.h"
+#include "../Search/InvertedIndex.h"
+
 using namespace std;
 
 class UserManager {
@@ -17,6 +19,9 @@ private:
 
     unordered_map<int, Post*> posts; // ✅ جدید
     int nextPostId;
+
+    InvertedIndex invertedIndex;
+
 public:
     UserManager();
 
@@ -36,6 +41,7 @@ public:
 
     bool createPost(const string& content);
     Post* getPost(int postId);
+    vector<Post*> searchPosts(const string& word);
 
 
     ~UserManager();
