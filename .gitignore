@@ -24,7 +24,7 @@ CMakeCache.txt
 cmake_install.cmake
 
 # ===== Ignore everything =====
-*
+
 
 # ===== Except these =====
 !*.cpp
