@@ -3,6 +3,7 @@
 UserManager::UserManager()
 {
 	currentUser = nullptr;
+    nextPostId = 1;
 }
 
 bool UserManager::signup(const string& username, const string& password) {
@@ -51,11 +52,34 @@ User* UserManager::getUser(const string& username) const {
     return nullptr;
 }
 
-UserManager::~UserManager() {
-    for (auto& pair : users) {
-        delete pair.second;
-    }
+bool UserManager::createPost(const string& content)
+{
+    if (currentUser == nullptr)
+        return false;
+
+    int id = nextPostId++;
+    Post* post = new Post(id, currentUser->getUsername(), content);
+
+    posts[id] = post;
+    currentUser->addPost(id);
+
+    return true;
 }
+
+Post* UserManager::getPost(int postId) {
+    if (posts.find(postId) == posts.end())
+        return nullptr;
+    return posts[postId];
+}
+
+UserManager::~UserManager() {
+    for (auto& pair : users)
+        delete pair.second;
+
+    for (auto& pair : posts)
+        delete pair.second;
+}
+
 bool UserManager::follow(const string& username) {
     if (!currentUser) return false;
 

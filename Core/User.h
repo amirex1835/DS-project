@@ -32,6 +32,8 @@ public:
     void addFollower(const string& username);
     void removeFollower(const string& username);
     void addPost(int postId);
+    const vector<int>& getPosts() const;
+
 };
 
 #endif

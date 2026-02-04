@@ -6,6 +6,7 @@
 #include <string>
 #include "../Core/User.h"
 #include "../Core/UserGraph.h"
+#include "../Core/Post.h"
 using namespace std;
 
 class UserManager {
@@ -13,6 +14,9 @@ private:
     unordered_map<string, User*> users;
     User* currentUser;
     UserGraph graph;
+
+    unordered_map<int, Post*> posts; // ✅ جدید
+    int nextPostId;
 public:
     UserManager();
 
@@ -28,6 +32,10 @@ public:
     // دسترسی
     User* getCurrentUser() const;
     User* getUser(const string& username) const;
+
+
+    bool createPost(const string& content);
+    Post* getPost(int postId);
 
 
     ~UserManager();

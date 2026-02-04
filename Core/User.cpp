@@ -35,6 +35,10 @@ void User::addPost(int postId)
 {
 	posts.push_back(postId);
 }
+const vector<int>& User::getPosts() const {
+	return posts;
+}
+
 void User::addFollower(const string& username) {
 	followers.insert(username);
 }

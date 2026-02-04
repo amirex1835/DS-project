@@ -13,8 +13,19 @@ int main() {
     userManager.signup("reza", "789");
 
     cout << "Users created successfully.\n" << endl;
+    cout << "\n=== POST TEST ===\n";
+    userManager.login("amir", "123");
 
-    cout << "=== LOGIN TEST ===" << endl;
+    userManager.createPost("Hello from amir!");
+    userManager.createPost("Second post!");
+
+    User* u = userManager.getUser("amir");
+    for (int id : u->getPosts()) {
+        Post* p = userManager.getPost(id);
+        cout << p->getAuthor() << ": " << p->getContent() << endl;
+    }
+
+    /*cout << "=== LOGIN TEST ===" << endl;
     if (userManager.login("amir", "123")) {
         cout << "amir logged in.\n" << endl;
     }
@@ -48,7 +59,7 @@ int main() {
     cout << "\nUser logged out." << endl;
 
     cout << "\n=== TEST FINISHED SUCCESSFULLY ===" << endl;
-    return 0;
+    return 0;*/
     /*return 0;
     Trie trie;
 
@@ -138,4 +149,5 @@ int main() {
     }
 
     return 0;*/
+    
 }
