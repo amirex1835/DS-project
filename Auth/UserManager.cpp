@@ -3,7 +3,7 @@
 UserManager::UserManager()
 {
 	currentUser = nullptr;
-    nextPostId = 1;
+    nextPostId = 0;
 }
 
 bool UserManager::signup(const string& username, const string& password) {
@@ -75,10 +75,11 @@ bool UserManager::createPost(const string& content) {
 
 
 Post* UserManager::getPost(int postId) {
-    if (posts.find(postId) == posts.end())
+    if (!posts.count(postId))
         return nullptr;
-    return posts[postId];
+    return posts.at(postId);
 }
+
 
 vector<Post*> UserManager::searchPosts(const string& word) {
     vector<Post*> result;
@@ -89,6 +90,21 @@ vector<Post*> UserManager::searchPosts(const string& word) {
             result.push_back(posts[id]);
     }
     return result;
+}
+
+
+bool UserManager::likePost(int postId) {
+
+    // 1️⃣ کاربر لاگین باشد
+    if (!currentUser)
+        return false;
+
+    // 2️⃣ پست وجود داشته باشد
+    if (!posts.count(postId))
+        return false;
+
+    // 3️⃣ لایک توسط یوزر
+    return posts[postId]->like(currentUser->getUsername());
 }
 
 

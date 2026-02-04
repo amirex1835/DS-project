@@ -18,7 +18,7 @@ private:
     UserGraph graph;
 
     unordered_map<int, Post*> posts; // ✅ جدید
-    int nextPostId;
+    int nextPostId=0;
 
     InvertedIndex invertedIndex;
 
@@ -43,6 +43,8 @@ public:
     Post* getPost(int postId);
     vector<Post*> searchPosts(const string& word);
 
+
+    bool likePost(int postId);
 
     ~UserManager();
 };

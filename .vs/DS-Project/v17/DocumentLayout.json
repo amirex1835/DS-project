@@ -7,16 +7,24 @@
       "RelativeMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|solutionrelative:DS-Project.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|C:\\Users\\AMIR\\Desktop\\DS-Project\\Auth\\UserManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|solutionrelative:Auth\\UserManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|C:\\Users\\AMIR\\Desktop\\DS-Project\\Auth\\UserManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|solutionrelative:Auth\\UserManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|C:\\Users\\AMIR\\Desktop\\DS-Project\\search\\InvertedIndex.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|solutionrelative:search\\InvertedIndex.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|C:\\Users\\AMIR\\Desktop\\DS-Project\\Auth\\UserManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|solutionrelative:Auth\\UserManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\Post.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|solutionrelative:Core\\Post.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\Post.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|solutionrelative:Core\\Post.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|C:\\Users\\AMIR\\Desktop\\DS-Project\\search\\InvertedIndex.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -33,14 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|solutionrelative:Core\\User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\Post.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|solutionrelative:Core\\Post.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\Post.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|solutionrelative:Core\\Post.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\UserGraph.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -62,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,52 +70,38 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "InvertedIndex.cpp",
-              "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\search\\InvertedIndex.cpp",
-              "RelativeDocumentMoniker": "search\\InvertedIndex.cpp",
-              "ToolTip": "C:\\Users\\AMIR\\Desktop\\DS-Project\\search\\InvertedIndex.cpp*",
-              "RelativeToolTip": "search\\InvertedIndex.cpp*",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-02-04T09:55:47.812Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "InvertedIndex.h",
               "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\search\\InvertedIndex.h",
               "RelativeDocumentMoniker": "search\\InvertedIndex.h",
-              "ToolTip": "C:\\Users\\AMIR\\Desktop\\DS-Project\\search\\InvertedIndex.h*",
-              "RelativeToolTip": "search\\InvertedIndex.h*",
+              "ToolTip": "C:\\Users\\AMIR\\Desktop\\DS-Project\\search\\InvertedIndex.h",
+              "RelativeToolTip": "search\\InvertedIndex.h",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-04T09:55:17.098Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-04T09:55:17.098Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "Post.cpp",
               "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\Post.cpp",
               "RelativeDocumentMoniker": "Core\\Post.cpp",
               "ToolTip": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\Post.cpp",
               "RelativeToolTip": "Core\\Post.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-02-04T09:31:03.629Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "Post.h",
               "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\Post.h",
               "RelativeDocumentMoniker": "Core\\Post.h",
               "ToolTip": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\Post.h",
               "RelativeToolTip": "Core\\Post.h",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-02-04T09:30:39.729Z",
               "EditorCaption": ""
@@ -134,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Trie.h",
               "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\search\\Trie.h",
               "RelativeDocumentMoniker": "search\\Trie.h",
@@ -142,31 +128,30 @@
               "RelativeToolTip": "search\\Trie.h",
               "ViewState": "AgIAAAcAAAAAAAAAAAAowBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-28T18:40:47.653Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T18:40:47.653Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "UserManager.cpp",
               "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Auth\\UserManager.cpp",
               "RelativeDocumentMoniker": "Auth\\UserManager.cpp",
-              "ToolTip": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Auth\\UserManager.cpp*",
-              "RelativeToolTip": "Auth\\UserManager.cpp*",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAwwFwAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Auth\\UserManager.cpp",
+              "RelativeToolTip": "Auth\\UserManager.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-01-28T16:56:24.249Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "UserManager.h",
               "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Auth\\UserManager.h",
               "RelativeDocumentMoniker": "Auth\\UserManager.h",
-              "ToolTip": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Auth\\UserManager.h*",
-              "RelativeToolTip": "Auth\\UserManager.h*",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAACsAAAAdAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Auth\\UserManager.h",
+              "RelativeToolTip": "Auth\\UserManager.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-01-28T16:50:04.564Z",
               "EditorCaption": ""
@@ -179,9 +164,22 @@
               "RelativeDocumentMoniker": "DS-Project.cpp",
               "ToolTip": "C:\\Users\\AMIR\\Desktop\\DS-Project\\DS-Project.cpp*",
               "RelativeToolTip": "DS-Project.cpp*",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAowAoAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-01-28T15:37:33.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InvertedIndex.cpp",
+              "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\search\\InvertedIndex.cpp",
+              "RelativeDocumentMoniker": "search\\InvertedIndex.cpp",
+              "ToolTip": "C:\\Users\\AMIR\\Desktop\\DS-Project\\search\\InvertedIndex.cpp",
+              "RelativeToolTip": "search\\InvertedIndex.cpp",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-02-04T09:55:47.812Z",
               "EditorCaption": ""
             },
             {
@@ -198,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "User.cpp",
               "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\User.cpp",
               "RelativeDocumentMoniker": "Core\\User.cpp",
@@ -206,12 +204,11 @@
               "RelativeToolTip": "Core\\User.cpp",
               "ViewState": "AgIAABoAAAAAAAAAAAAwwCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-28T16:43:41.533Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T16:43:41.533Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "User.h",
               "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\User.h",
               "RelativeDocumentMoniker": "Core\\User.h",
@@ -219,8 +216,7 @@
               "RelativeToolTip": "Core\\User.h",
               "ViewState": "AgIAABAAAAAAAAAAAAAowCIAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-28T15:47:58.004Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-28T15:47:58.004Z"
             },
             {
               "$type": "Document",
