@@ -36,6 +36,12 @@
     <ClCompile Include="search\InvertedIndex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Feed\FeedManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="search\HammingDistance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\User.h">
@@ -54,6 +60,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="search\InvertedIndex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Feed\FeedManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="search\HammingDistance.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

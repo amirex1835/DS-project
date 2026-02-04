@@ -1,5 +1,6 @@
 ﻿#include "UserManager.h"
 
+#include "../search/HammingDistance.h"
 UserManager::UserManager()
 {
 	currentUser = nullptr;
@@ -80,7 +81,13 @@ Post* UserManager::getPost(int postId) {
     return posts.at(postId);
 }
 
+unordered_map<int, Post*>& UserManager::getPosts() {
+    return posts;
+}
 
+//unordered_map<string, User*>& UserManager::getUsers() {
+//    return users;
+//}
 vector<Post*> UserManager::searchPosts(const string& word) {
     vector<Post*> result;
     auto ids = invertedIndex.search(word);
@@ -91,8 +98,6 @@ vector<Post*> UserManager::searchPosts(const string& word) {
     }
     return result;
 }
-
-
 bool UserManager::likePost(int postId) {
 
     // 1️⃣ کاربر لاگین باشد
@@ -105,6 +110,27 @@ bool UserManager::likePost(int postId) {
 
     // 3️⃣ لایک توسط یوزر
     return posts[postId]->like(currentUser->getUsername());
+}
+
+string UserManager::smartSearchUser(const string& term) {
+    // 1️⃣ اگر دقیقاً وجود دارد
+    if (users.count(term))
+        return term;
+
+    int bestDistance = INT_MAX;
+    string bestMatch = "";
+
+    for (auto& entry : users) {
+        const string& username = entry.first;
+
+        int dist = hammingDistance(term, username);
+        if (dist < bestDistance) {
+            bestDistance = dist;
+            bestMatch = username;
+        }
+    }
+
+    return bestMatch;
 }
 
 

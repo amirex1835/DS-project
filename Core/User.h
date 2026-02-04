@@ -15,7 +15,9 @@ private:
 
     vector<int> posts;
 
+
 public:
+    //const vector<int>& getPosts() const;
 
     User(const string& username, const string& password);
 
@@ -33,6 +35,10 @@ public:
     void removeFollower(const string& username);
     void addPost(int postId);
     const vector<int>& getPosts() const;
+
+    const unordered_set<string>& getFollowing() const;
+    const unordered_set<string>& getFollowers() const;
+
 
 };
 

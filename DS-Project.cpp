@@ -1,69 +1,139 @@
 ﻿#include <iostream>
 #include <sstream>
+#include <thread>
+#include <chrono>
 #include "Auth/UserManager.h"
 #include "search/Trie.h"
+#include "Feed/FeedManager.h"
+#include"Search/HammingDistance.h"
 using namespace std;
 
 int main() {
     UserManager um;
-
     um.signup("ali", "123");
-    um.login("ali", "123");
+    um.signup("alireza", "123");
+    cout << "Smart search result:\n";
+    string result = um.smartSearchUser("alirezaa");
 
-    um.createPost("First post");
-    um.createPost("Second post");
+    if (!result.empty())
+        cout << "Did you mean " << result << "?\n";
 
-    cout << um.getPost(0)->getLikeCount() << endl; // ✅
-    cout << um.getPost(1)->getLikeCount() << endl; // ✅
-    return 0;
-    cout << "=== SIGNUP ===" << endl;
-    um.signup("reza", "123");
-    um.signup("sara", "123");
+    //hammingDistance();
+    //FeedManager fm;
 
-    cout << "\n=== LOGIN ali ===" << endl;
-    if (!um.login("ali", "123")) {
-        cout << "Login failed!" << endl;
-        return 0;
-    }
+    //// ---------- ساخت کاربران ----------
+    //um.signup("ali", "123");
+    //um.signup("reza", "123");
+    //um.signup("sara", "123");
 
-    cout << "\n=== CREATE POSTS ===" << endl;
-    bool p1 = um.createPost("Hello World #first");
-    bool p2 = um.createPost("Data Structures is fun #ds");
+    //// ---------- follow ----------
+    //um.login("ali", "123");
+    //um.follow("reza");
+    //um.follow("sara");
+    //um.logout();
 
-    cout << "Post 0 created: " << p1 << endl;
-    cout << "Post 1 created: " << p2 << endl;
+    //// ---------- reza پست می‌گذارد ----------
+    //um.login("reza", "123");
+    //um.createPost("reza post 1");
+    //this_thread::sleep_for(chrono::seconds(2));
+    //um.createPost("reza post 2");
+    //um.logout();
 
-    cout << "\n=== CHECK POSTS ===" << endl;
-    Post* post0 = um.getPost(0);
-    Post* post1 = um.getPost(1);
+    //// ---------- sara پست می‌گذارد ----------
+    //um.login("sara", "123");
+    //um.createPost("sara post 1");
+    //um.logout();
 
-    cout << "Post 0: " << (post0 ? "OK" : "NULL") << endl;
-    cout << "Post 1: " << (post1 ? "OK" : "NULL") << endl;
+    //// ---------- لایک‌ها ----------
+    //um.login("ali", "123");
+    //um.likePost(0);
+    //um.likePost(1);
+    //um.likePost(2);
+    //um.logout();
 
-    cout << "\n=== LOGIN reza ===" << endl;
-    um.login("reza", "123");
-    um.likePost(0);
-    um.likePost(1);
+    //um.login("reza", "123");
+    //um.likePost(2);   // reza، پست sara رو لایک می‌کنه
+    //um.logout();
 
-    cout << "\n=== LOGIN sara ===" << endl;
-    um.login("sara", "123");
-    um.likePost(0);
+    //// ---------- تست Feed ----------
+    //um.login("ali", "123");
 
-    cout << "\n=== DUPLICATE LIKE TEST ===" << endl;
-    um.likePost(0); // نباید دوباره حساب شود
+    //vector<Post*> feed = fm.getTopFeed(
+    //    um.getCurrentUser(),
+    //    um.getPost(),
+    //    um.getUser()
+    //);
 
-    cout << "\n=== FINAL LIKE COUNTS ===" << endl;
-    if (post0)
-        cout << "Post 0 likes: " << post0->getLikeCount() << endl;
+    //cout << "===== SMART FEED =====\n";
+    //for (Post* p : feed) {
+    //    cout << "PostID: " << p->getId()
+    //        << " | Author: " << p->getAuthor()
+    //        << " | Likes: " << p->getLikeCount()
+    //        << " | Content: " << p->getContent()
+    //        << endl;
+    //}
 
-    if (post1)
-        cout << "Post 1 likes: " << post1->getLikeCount() << endl;
+    //um.logout();
+    //return 0;
+    //UserManager um;
 
-    cout << "\n=== EXPECTED OUTPUT ===" << endl;
-    cout << "Post 0 likes: 2" << endl;
-    cout << "Post 1 likes: 1" << endl;
+    //um.signup("ali", "123");
+    //um.login("ali", "123");
 
-    return 0;
+    //um.createPost("First post");
+    //um.createPost("Second post");
+
+    //cout << um.getPost(0)->getLikeCount() << endl;
+    //cout << um.getPost(1)->getLikeCount() << endl;
+    //return 0;
+    //cout << "=== SIGNUP ===" << endl;
+    //um.signup("reza", "123");
+    //um.signup("sara", "123");
+
+    //cout << "\n=== LOGIN ali ===" << endl;
+    //if (!um.login("ali", "123")) {
+    //    cout << "Login failed!" << endl;
+    //    return 0;
+    //}
+
+    //cout << "\n=== CREATE POSTS ===" << endl;
+    //bool p1 = um.createPost("Hello World #first");
+    //bool p2 = um.createPost("Data Structures is fun #ds");
+
+    //cout << "Post 0 created: " << p1 << endl;
+    //cout << "Post 1 created: " << p2 << endl;
+
+    //cout << "\n=== CHECK POSTS ===" << endl;
+    //Post* post0 = um.getPost(0);
+    //Post* post1 = um.getPost(1);
+
+    //cout << "Post 0: " << (post0 ? "OK" : "NULL") << endl;
+    //cout << "Post 1: " << (post1 ? "OK" : "NULL") << endl;
+
+    //cout << "\n=== LOGIN reza ===" << endl;
+    //um.login("reza", "123");
+    //um.likePost(0);
+    //um.likePost(1);
+
+    //cout << "\n=== LOGIN sara ===" << endl;
+    //um.login("sara", "123");
+    //um.likePost(0);
+
+    //cout << "\n=== DUPLICATE LIKE TEST ===" << endl;
+    //um.likePost(0); // نباید دوباره حساب شود
+
+    //cout << "\n=== FINAL LIKE COUNTS ===" << endl;
+    //if (post0)
+    //    cout << "Post 0 likes: " << post0->getLikeCount() << endl;
+
+    //if (post1)
+    //    cout << "Post 1 likes: " << post1->getLikeCount() << endl;
+
+    //cout << "\n=== EXPECTED OUTPUT ===" << endl;
+    //cout << "Post 0 likes: 2" << endl;
+    //cout << "Post 1 likes: 1" << endl;
+
+    //return 0;
     /*UserManager um;
 
     um.signup("ali", "123");

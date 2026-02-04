@@ -42,9 +42,13 @@ public:
     bool createPost(const string& content);
     Post* getPost(int postId);
     vector<Post*> searchPosts(const string& word);
+    unordered_map<int, Post*>& getPosts();
 
 
     bool likePost(int postId);
+
+    string smartSearchUser(const string& term);
+
 
     ~UserManager();
 };

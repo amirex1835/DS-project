@@ -39,6 +39,16 @@ const vector<int>& User::getPosts() const {
 	return posts;
 }
 
+const unordered_set<string>& User::getFollowing() const {
+	return following;
+}
+
+const unordered_set<string>& User::getFollowers() const
+{
+	return followers;
+}
+
+
 void User::addFollower(const string& username) {
 	followers.insert(username);
 }

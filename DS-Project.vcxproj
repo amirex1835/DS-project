@@ -132,6 +132,8 @@
     <ClCompile Include="Core\User.cpp" />
     <ClCompile Include="Core\UserGraph.cpp" />
     <ClCompile Include="DS-Project.cpp" />
+    <ClCompile Include="Feed\FeedManager.cpp" />
+    <ClCompile Include="search\HammingDistance.cpp" />
     <ClCompile Include="search\InvertedIndex.cpp" />
     <ClCompile Include="search\Trie.cpp" />
   </ItemGroup>
@@ -140,6 +142,8 @@
     <ClInclude Include="Core\Post.h" />
     <ClInclude Include="Core\User.h" />
     <ClInclude Include="Core\UserGraph.h" />
+    <ClInclude Include="Feed\FeedManager.h" />
+    <ClInclude Include="search\HammingDistance.h" />
     <ClInclude Include="search\InvertedIndex.h" />
     <ClInclude Include="search\Trie.h" />
   </ItemGroup>
