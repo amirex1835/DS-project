@@ -15,6 +15,22 @@
       "RelativeMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|solutionrelative:Auth\\UserManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|C:\\Users\\AMIR\\Desktop\\DS-Project\\History\\SearchHistory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|solutionrelative:History\\SearchHistory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\User.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|solutionrelative:Core\\User.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|C:\\Users\\AMIR\\Desktop\\DS-Project\\History\\SearchHistory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|solutionrelative:History\\SearchHistory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|solutionrelative:Core\\User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|C:\\Users\\AMIR\\Desktop\\DS-Project\\search\\HammingDistance.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|solutionrelative:search\\HammingDistance.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -29,14 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|C:\\Users\\AMIR\\Desktop\\DS-Project\\Feed\\FeedManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|solutionrelative:Feed\\FeedManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\User.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|solutionrelative:Core\\User.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|solutionrelative:Core\\User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E78902DA-CB7F-4E7A-A436-8F2C7C5E8D4A}|DS-Project.vcxproj|C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\Post.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -88,7 +96,7 @@
               "RelativeDocumentMoniker": "DS-Project.cpp",
               "ToolTip": "C:\\Users\\AMIR\\Desktop\\DS-Project\\DS-Project.cpp*",
               "RelativeToolTip": "DS-Project.cpp*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-01-28T15:37:33.363Z",
               "IsPinned": true,
@@ -96,7 +104,61 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserManager.h",
+              "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Auth\\UserManager.h",
+              "RelativeDocumentMoniker": "Auth\\UserManager.h",
+              "ToolTip": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Auth\\UserManager.h",
+              "RelativeToolTip": "Auth\\UserManager.h",
+              "ViewState": "AgIAAB8AAAAAAAAAAAApwDQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-28T16:50:04.564Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserManager.cpp",
+              "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Auth\\UserManager.cpp",
+              "RelativeDocumentMoniker": "Auth\\UserManager.cpp",
+              "ToolTip": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Auth\\UserManager.cpp",
+              "RelativeToolTip": "Auth\\UserManager.cpp",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAUwIQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-28T16:56:24.249Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "SearchHistory.cpp",
+              "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\History\\SearchHistory.cpp",
+              "RelativeDocumentMoniker": "History\\SearchHistory.cpp",
+              "ToolTip": "C:\\Users\\AMIR\\Desktop\\DS-Project\\History\\SearchHistory.cpp",
+              "RelativeToolTip": "History\\SearchHistory.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-02-04T19:53:52.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SearchHistory.h",
+              "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\History\\SearchHistory.h",
+              "RelativeDocumentMoniker": "History\\SearchHistory.h",
+              "ToolTip": "C:\\Users\\AMIR\\Desktop\\DS-Project\\History\\SearchHistory.h",
+              "RelativeToolTip": "History\\SearchHistory.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-04T19:52:25.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "HammingDistance.cpp",
               "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\search\\HammingDistance.cpp",
               "RelativeDocumentMoniker": "search\\HammingDistance.cpp",
@@ -108,8 +170,38 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.h",
+              "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\User.h",
+              "RelativeDocumentMoniker": "Core\\User.h",
+              "ToolTip": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\User.h",
+              "RelativeToolTip": "Core\\User.h",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwBUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-28T15:47:58.004Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "User.cpp",
+              "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\User.cpp",
+              "RelativeDocumentMoniker": "Core\\User.cpp",
+              "ToolTip": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\User.cpp",
+              "RelativeToolTip": "Core\\User.cpp",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-28T16:43:41.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "HammingDistance.h",
               "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\search\\HammingDistance.h",
               "RelativeDocumentMoniker": "search\\HammingDistance.h",
@@ -121,25 +213,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FeedManager.cpp",
-              "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Feed\\FeedManager.cpp",
-              "RelativeDocumentMoniker": "Feed\\FeedManager.cpp",
-              "ToolTip": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Feed\\FeedManager.cpp",
-              "RelativeToolTip": "Feed\\FeedManager.cpp",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-02-04T16:41:50.25Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "FeedManager.h",
               "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Feed\\FeedManager.h",
               "RelativeDocumentMoniker": "Feed\\FeedManager.h",
@@ -152,33 +227,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserManager.cpp",
-              "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Auth\\UserManager.cpp",
-              "RelativeDocumentMoniker": "Auth\\UserManager.cpp",
-              "ToolTip": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Auth\\UserManager.cpp",
-              "RelativeToolTip": "Auth\\UserManager.cpp",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAEwGQAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "FeedManager.cpp",
+              "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Feed\\FeedManager.cpp",
+              "RelativeDocumentMoniker": "Feed\\FeedManager.cpp",
+              "ToolTip": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Feed\\FeedManager.cpp",
+              "RelativeToolTip": "Feed\\FeedManager.cpp",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-28T16:56:24.249Z",
+              "WhenOpened": "2026-02-04T16:41:50.25Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserManager.h",
-              "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Auth\\UserManager.h",
-              "RelativeDocumentMoniker": "Auth\\UserManager.h",
-              "ToolTip": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Auth\\UserManager.h",
-              "RelativeToolTip": "Auth\\UserManager.h",
-              "ViewState": "AgIAAB8AAAAAAAAAAAApwDEAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-28T16:50:04.564Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Post.h",
               "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\Post.h",
               "RelativeDocumentMoniker": "Core\\Post.h",
@@ -191,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Trie.h",
               "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\search\\Trie.h",
               "RelativeDocumentMoniker": "search\\Trie.h",
@@ -204,33 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "User.h",
-              "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\User.h",
-              "RelativeDocumentMoniker": "Core\\User.h",
-              "ToolTip": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\User.h",
-              "RelativeToolTip": "Core\\User.h",
-              "ViewState": "AgIAABQAAAAAAAAAAAAUwCcAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-01-28T15:47:58.004Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "User.cpp",
-              "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\User.cpp",
-              "RelativeDocumentMoniker": "Core\\User.cpp",
-              "ToolTip": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\User.cpp",
-              "RelativeToolTip": "Core\\User.cpp",
-              "ViewState": "AgIAACIAAAAAAAAAAAAEwC8AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-01-28T16:43:41.533Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Post.cpp",
               "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\Post.cpp",
               "RelativeDocumentMoniker": "Core\\Post.cpp",
@@ -243,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Trie.cpp",
               "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\search\\Trie.cpp",
               "RelativeDocumentMoniker": "search\\Trie.cpp",
@@ -255,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "InvertedIndex.cpp",
               "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\search\\InvertedIndex.cpp",
               "RelativeDocumentMoniker": "search\\InvertedIndex.cpp",
@@ -268,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "InvertedIndex.h",
               "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\search\\InvertedIndex.h",
               "RelativeDocumentMoniker": "search\\InvertedIndex.h",
@@ -280,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "UserGraph.h",
               "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\UserGraph.h",
               "RelativeDocumentMoniker": "Core\\UserGraph.h",
@@ -292,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "UserGraph.cpp",
               "DocumentMoniker": "C:\\Users\\AMIR\\Desktop\\DS-Project\\Core\\UserGraph.cpp",
               "RelativeDocumentMoniker": "Core\\UserGraph.cpp",

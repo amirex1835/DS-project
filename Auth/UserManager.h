@@ -50,6 +50,9 @@ public:
     string smartSearchUser(const string& term);
 
 
+    void showSearchHistory() const;
+
+
     ~UserManager();
 };
 

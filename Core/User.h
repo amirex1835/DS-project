@@ -4,12 +4,13 @@
 #include <string>
 #include <unordered_set>
 #include <vector>
+#include "../History/SearchHistory.h"
 using namespace std;
 class User {
 private:
     string username;
     string password;
-
+    SearchHistory searchHistory;
     unordered_set<string> followers;
     unordered_set<string> following;
 
@@ -17,7 +18,8 @@ private:
 
 
 public:
-    //const vector<int>& getPosts() const;
+    void addSearchHistory(const string& term);
+    vector<string> getSearchHistory() const;
 
     User(const string& username, const string& password);
 

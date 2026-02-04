@@ -12,12 +12,13 @@ int main() {
     UserManager um;
     um.signup("ali", "123");
     um.signup("alireza", "123");
+    um.login("alireza", "123");
     cout << "Smart search result:\n";
-    string result = um.smartSearchUser("alirezaa");
-
+    string result1 = um.smartSearchUser("alirezaa");
+    string result = um.smartSearchUser("alir");
     if (!result.empty())
         cout << "Did you mean " << result << "?\n";
-
+    um.showSearchHistory();
     //hammingDistance();
     //FeedManager fm;
 

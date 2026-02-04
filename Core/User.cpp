@@ -56,3 +56,11 @@ void User::addFollower(const string& username) {
 void User::removeFollower(const string& username) {
 	followers.erase(username);
 }
+
+void User::addSearchHistory(const string& term) {
+	searchHistory.addSearch(term);
+}
+
+vector<string> User::getSearchHistory() const {
+	return searchHistory.getHistory();
+}

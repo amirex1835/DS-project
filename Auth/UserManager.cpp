@@ -1,5 +1,5 @@
 ﻿#include "UserManager.h"
-
+#include <iostream>
 #include "../search/HammingDistance.h"
 UserManager::UserManager()
 {
@@ -113,24 +113,43 @@ bool UserManager::likePost(int postId) {
 }
 
 string UserManager::smartSearchUser(const string& term) {
-    // 1️⃣ اگر دقیقاً وجود دارد
+    if (!currentUser) return "";
+
+    currentUser->addSearchHistory(term);
+
     if (users.count(term))
         return term;
 
-    int bestDistance = INT_MAX;
+    int bestDist = INT_MAX;
     string bestMatch = "";
 
-    for (auto& entry : users) {
-        const string& username = entry.first;
-
-        int dist = hammingDistance(term, username);
-        if (dist < bestDistance) {
-            bestDistance = dist;
-            bestMatch = username;
+    for (auto& u : users) {
+        int dist = hammingDistance(term, u.first);
+        if (dist < bestDist) {
+            bestDist = dist;
+            bestMatch = u.first;
         }
     }
 
     return bestMatch;
+}
+
+
+void UserManager::showSearchHistory() const {
+    if (!currentUser) {
+        cout << "No user logged in\n";
+        return;
+    }
+
+    auto history = currentUser->getSearchHistory();
+    if (history.empty()) {
+        cout << "Search history is empty\n";
+        return;
+    }
+
+    for (const auto& term : history) {
+        cout << term << endl;
+    }
 }
 
 
