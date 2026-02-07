@@ -9,7 +9,200 @@
 using namespace std;
 
 int main() {
-    UserManager um;
+        UserManager userManager;
+        //FeedManager feedManager; // 🔴 برای فاز feed
+
+        cout << "ConnectGram started. Type commands:\n";
+
+        string line;
+        while (true) {
+            getline(cin, line);
+            if (line.empty())
+                continue;
+
+            stringstream ss(line);
+            string command;
+            ss >> command;
+
+            // ---------- EXIT ----------
+            if (command == "exit") {
+                cout << "Exiting ConnectGram...\n";
+                break;
+            }
+
+            // ---------- SIGNUP ----------
+            else if (command == "signup") {
+                string username, password;
+                ss >> username >> password;
+
+                if (username.empty() || password.empty()) {
+                    cout << "Error: invalid signup command\n";
+                    continue;
+                }
+
+                if (userManager.signup(username, password))
+                    cout << "User registered successfully\n";
+                else
+                    cout << "Error: username already exists\n";
+            }
+
+            // ---------- LOGIN ----------
+            else if (command == "login") {
+                string username, password;
+                ss >> username >> password;
+
+                if (userManager.login(username, password))
+                    cout << "Login successful\n";
+                
+                    
+            }
+
+            // ---------- LOGOUT ----------
+            else if (command == "logout") {
+                if (!userManager.getCurrentUser())
+                    cout << "Error: no user is logged in\n";
+                else {
+                    userManager.logout();
+                    cout << "Logged out successfully\n";
+                }
+            }
+
+            // ---------- FOLLOW ----------
+            else if (command == "follow") {
+                string username;
+                ss >> username;
+
+                User* current = userManager.getCurrentUser();
+                if (!current) {
+                    //cout << "Error: no user is logged in\n";
+                    continue;
+                }
+
+                if (userManager.follow(username)) {
+                    //cout << current->getUsername()
+                      //  << " followed " << username << endl;
+                }
+                else {
+                    //cout << "Error: follow failed\n";
+                }
+            }
+
+
+            // ---------- UNFOLLOW ----------
+            else if (command == "unfollow") {
+                string username;
+                ss >> username;
+
+                User* current = userManager.getCurrentUser();
+                if (!current) {
+                    //cout << "Error: no user is logged in\n";
+                    continue;
+                }
+
+                if (userManager.unfollow(username)) {
+                    //cout << current->getUsername()
+                       // << " unfollowed "
+                        //<< username << endl;
+                }
+                else {
+                    //cout << "Error: unfollow failed\n";
+                }
+            }
+
+
+            // ---------- POST ----------
+            else if (command == "post") {
+                string content;
+
+                // خواندن متن داخل کوتیشن
+                getline(ss >> ws, content, '"'); // رد شدن از قبل کوتیشن
+                getline(ss, content, '"');        // گرفتن محتوا تا کوتیشن بعدی
+
+                if (content.empty()) {
+                    cout << "Error: empty post content\n";
+                    
+                }
+
+                if (!userManager.createPost(content))
+                    cout << "Error: post failed\n";
+                else
+                {
+                    cout <<"you posted : "<<  content<<endl;
+                }
+            }
+
+            // ---------- LIKE ----------
+            else if (command == "like") {
+                int postId;
+                ss >> postId;
+
+                if (!userManager.likePost(postId))
+                    cout << "Error: like failed\n";
+            }
+
+            // ---------- PREFIX SEARCH ----------
+            else if (command == "search_user") {
+                string prefix;
+                ss >> prefix;
+
+                auto results = userManager.searchUser(prefix);
+                for (const auto& u : results)
+                    cout << u << endl;
+            }
+
+            // ---------- SMART SEARCH ----------
+            else if (command == "smart_search") {
+                string term;
+                ss >> term;
+
+                string result = userManager.smartSearchUser(term);
+                if (!result.empty())
+                    cout << "Did you mean " << result << "?\n";
+            }
+
+            // ---------- SEARCH HISTORY ----------
+            else if (command == "show_history") {
+                userManager.showSearchHistory();
+            }
+
+            // ---------- TREND ----------
+            else if (command == "trend") {
+                string hashtag;
+                ss >> hashtag;
+
+                auto posts = userManager.searchPosts(hashtag);
+                for (auto p : posts) {
+                    cout << p->getAuthor() << " : "
+                        << p->getContent() << endl;
+                }
+            }
+
+            // ---------- SMART FEED (NOT USED YET) ----------
+            /*
+            else if (command == "show_feed") {
+                auto feed = feedManager.getTopFeed(
+                    userManager.getCurrentUser(),
+                    userManager.getPosts(),
+                    userManager.getUsers()
+                );
+
+                for (auto p : feed) {
+                    cout << p->getAuthor()
+                         << " | Likes: " << p->getLikeCount()
+                         << " | " << p->getContent() << endl;
+                }
+            }
+            */
+
+            // ---------- UNKNOWN ----------
+            else {
+                cout << "Error: unknown command\n";
+            }
+        }
+
+        return 0;
+    
+    /*UserManager um;
     um.signup("ali", "123");
     um.signup("alireza", "123");
     um.login("alireza", "123");
@@ -18,7 +211,7 @@ int main() {
     string result = um.smartSearchUser("alir");
     if (!result.empty())
         cout << "Did you mean " << result << "?\n";
-    um.showSearchHistory();
+    um.showSearchHistory();*/
     //hammingDistance();
     //FeedManager fm;
 

@@ -8,7 +8,7 @@
 #include "../Core/UserGraph.h"
 #include "../Core/Post.h"
 #include "../Search/InvertedIndex.h"
-
+#include "../search/Trie.h"
 using namespace std;
 
 class UserManager {
@@ -16,7 +16,7 @@ private:
     unordered_map<string, User*> users;
     User* currentUser;
     UserGraph graph;
-
+    Trie userTrie;
     unordered_map<int, Post*> posts; // ✅ جدید
     int nextPostId=0;
 
@@ -24,6 +24,7 @@ private:
 
 public:
     UserManager();
+    vector<string> searchUser(const string& prefix);
 
     bool signup(const string& username, const string& password);
 

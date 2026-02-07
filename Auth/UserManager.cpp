@@ -7,6 +7,11 @@ UserManager::UserManager()
     nextPostId = 0;
 }
 
+vector<string> UserManager::searchUser(const string& prefix) {
+    currentUser->addSearchHistory(prefix);
+    return userTrie.prefixSearch(prefix);
+}
+
 bool UserManager::signup(const string& username, const string& password) {
 
     if (users.find(username) != users.end()) {
@@ -16,13 +21,18 @@ bool UserManager::signup(const string& username, const string& password) {
 
     User* newUser = new User(username, password);
     users[username] = newUser;
-
+    userTrie.insert(username);
     return true;
 }
 
 bool UserManager::login(const string& username, const string& password) {
+    if (currentUser != nullptr) {
+        cout << "another user is login"<<endl;
+        return false;
+    }
     // اگر کاربر وجود ندارد
     if (users.find(username) == users.end()) {
+        cout << "Error: invalid username or password\n";
         return false;
     }
 
@@ -30,6 +40,7 @@ bool UserManager::login(const string& username, const string& password) {
 
     // بررسی رمز عبور
     if (!user->checkPassword(password)) {
+        cout << "Error: invalid username or password\n";
         return false;
     }
 
@@ -57,22 +68,35 @@ bool UserManager::createPost(const string& content) {
 
     if (currentUser == nullptr)
         return false;
-    int postId = nextPostId;
-    nextPostId++;
+
+    int postId = nextPostId++;
 
     Post* newPost = new Post(
-        postId,                        
-        currentUser->getUsername(),     
-        content                         
+        postId,
+        currentUser->getUsername(),
+        content
     );
-    posts[postId] = newPost;
 
+    posts[postId] = newPost;
     currentUser->addPost(postId);
 
-    invertedIndex.addPost(postId, content);
+    // ✅ فقط اگر پست با هشتگ شروع شود
+    if (!content.empty() && content[0] == '#') {
+        string hashtag;
+
+        // جدا کردن هشتگ از متن
+        size_t spacePos = content.find(' ');
+        if (spacePos == string::npos)
+            hashtag = content.substr(1);              // #hello
+        else
+            hashtag = content.substr(1, spacePos - 1); // #hello world
+
+        invertedIndex.addPost(postId, hashtag);
+    }
 
     return true;
 }
+
 
 
 Post* UserManager::getPost(int postId) {
@@ -108,14 +132,26 @@ bool UserManager::likePost(int postId) {
     if (!posts.count(postId))
         return false;
 
-    // 3️⃣ لایک توسط یوزر
-    return posts[postId]->like(currentUser->getUsername());
+    Post* post = posts[postId];
+
+    // 3️⃣ تلاش برای لایک
+    bool liked = post->like(currentUser->getUsername());
+
+    // ✅ اگر لایک موفق بود، چاپ کن
+    if (liked) {
+        cout << "Post " << postId
+            << " with content: \""
+            << post->getContent()
+            << "\" liked successfully\n";
+    }
+
+    return liked;
 }
+
 
 string UserManager::smartSearchUser(const string& term) {
     if (!currentUser) return "";
 
-    currentUser->addSearchHistory(term);
 
     if (users.count(term))
         return term;
@@ -131,6 +167,7 @@ string UserManager::smartSearchUser(const string& term) {
         }
     }
 
+    currentUser->addSearchHistory(bestMatch);
     return bestMatch;
 }
 
@@ -162,10 +199,28 @@ UserManager::~UserManager() {
 }
 
 bool UserManager::follow(const string& username) {
-    if (!currentUser) return false;
+    if (!currentUser) {
+        cout << "Error: no user is logged in\n";
+        return false;
+    }
 
     User* target = getUser(username);
-    if (!target) return false;
+    if (!target) {
+        cout << "Error: user not found\n";
+        return false;
+    }
+
+    // جلوگیری از فالو کردن خود
+    if (currentUser->getUsername() == username) {
+        cout << "Error: cannot follow yourself\n";
+        return false;
+    }
+
+    // اگر قبلاً فالو کرده
+    if (currentUser->getFollowing().count(username)) {
+        cout << "Error: already following this user\n";
+        return false;
+    }
 
     // آپدیت User
     currentUser->follow(username);
@@ -174,22 +229,44 @@ bool UserManager::follow(const string& username) {
     // آپدیت Graph
     graph.follow(currentUser->getUsername(), username);
 
+    // ✅ پیام موفقیت
+    cout << currentUser->getUsername()
+        << " followed "
+        << username << endl;
+
     return true;
 }
 
+
 bool UserManager::unfollow(const string& username) {
-    if (!currentUser) return false;
+    if (!currentUser) {
+        cout << "Error: no user is logged in\n";
+        return false;
+    }
 
     User* target = getUser(username);
-    if (!target) return false;
+    if (!target) {
+        cout << "Error: user not found\n";
+        return false;
+    }
 
+    // اگر اصلاً فالو نکرده
+    if (!currentUser->getFollowing().count(username)) {
+        cout << "Error: you are not following this user\n";
+        return false;
+    }
+
+    // آپدیت User
     currentUser->unfollow(username);
     target->removeFollower(currentUser->getUsername());
 
+    // آپدیت Graph
     graph.unfollow(currentUser->getUsername(), username);
+
+    // ✅ پیام موفقیت
+    cout << currentUser->getUsername()
+        << " unfollowed "
+        << username << endl;
 
     return true;
 }
-
-
-
